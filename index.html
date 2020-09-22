@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drive</title>
+    <!-- ========== reset styles ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <!-- ========== Fontawesome =========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Mulish fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- ========== Custom styles ========== -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="window">
+      <!-- ========== left sidebar ========== -->
+      <!-- ================================== -->
+      <aside class="left-sidebar">
+        <!-- ========== logo ========= -->
+        <a href="#" class="logo">
+          <img class="logo_img" src="images/left-sidebar_logo.svg" alt="logo" />
+          <p class="logo_title">Drive</p>
+        </a>
+        <!-- ========== nav ========= -->
+        <nav>
+          <ul class="nav">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="fas fa-cloud"></i>
+                My Drive</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="fas fa-share-square"></i>
+                Shared Files</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="fas fa-folder"></i>
+                File Requests</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="far fa-star"></i>
+                Starred</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="far fa-trash-alt"></i>
+                Trash</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="fas fa-signal"></i>
+                Statistics
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="far fa-calendar-minus"></i>
+                Task
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ========== storage ========== -->
+        <div class="storage">
+          <div class="storage_title-wrapper">
+            <div class="storage_title fas fa-cloud">Storage</div>
+            <div class="storage_percent">73%</div>
+          </div>
+
+          <div class="storage_progress">
+            <div class="progress progress--dinamic"></div>
+            <!-- <div class="storage_busy-memory" style="width: 73%"></div> -->
+          </div>
+          <p class="storage_text">27/100 GB Used</p>
+        </div>
+      </aside>
+      <!-- ========== left sidebar end ========== -->
+
+      <!-- ========== content ========== -->
+      <!-- ============================= -->
+      <div class="content">
+        <div class="content_container">
+          <!-- ========== search ========== -->
+          <form class="search">
+            <label for="search">
+              <i class="search_icon fas fa-search"></i>
+            </label>
+            <input type="text" id="search" placeholder="Search" />
+          </form>
+
+          <!-- ========== dashboard ========== -->
+          <section class="dashboard">
+            <h2 class="section-title">Dashboard</h2>
+            <div class="dashboard_link-wrapper">
+              <a href="#" class="dashboard_link fas fa-th-large"></a>
+              <a href="#" class="dashboard_link fas fa-list"></a>
+              <button>
+                <a href="#"
+                  >Upload File
+                  <i class="fas fa-cloud-upload-alt"></i>
+                </a>
+              </button>
+            </div>
+          </section>
+
+          <!-- ========== section hero ========== -->
+          <section class="hero">
+            <div class="hero_text">
+              <div class="hero_title">Welcome Back Jannie</div>
+              <p class="hero_description">
+                Get additional 500 GB space for your documents and files. Unlock
+                now for more space.
+              </p>
+              <button>
+                <a href="#" class="hero-link">Upgrade</a>
+              </button>
+            </div>
+            <div class="hero_img-container">
+              <div class="hero_img">
+                <img src="images/hero_image.svg" alt="image" />
+              </div>
+              <div class="hero_bg-img">
+                <img src="images/hero_bg.svg" alt="background image" />
+              </div>
+            </div>
+          </section>
+
+          <!-- ========== section folders ========== -->
+          <section class="folders">
+            <!-- =================================== -->
+            <div class="section-title_wrapper">
+              <h2 class="section-title">Folders</h2>
+              <a href="#" class="folders-link"
+                >View All
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <!-- ========== folders item ========== -->
+            <div class="folders-item-wrapper">
+              <!-- ========== folders item bg1 ========== -->
+              <div class="folders-item folders-item--bg-one">
+                <!-- ========== folders item  top ========== -->
+                <div class="folders-item_top">
+                  <a href="#" class="folders-item_icon folders-item_icon--bg1">
+                    <i
+                      class="folder_icon folder_icon--color1 fas fa-folder"
+                    ></i>
+                    <i
+                      class="folder_user folder_user--color1 fas fa-user-friends"
+                    ></i>
+                  </a>
+                  <a href="#">
+                    <i class="folder_menu fas fa-ellipsis-v"></i>
+                  </a>
+                </div>
+                <!-- ========== folders item center ========== -->
+                <h3 class="folders-item_title">Design Shift</h3>
+                <div class="folders-item_user">
+                  <div class="folders-item_user-fhoto-wrapper">
+                    <img
+                      class="folders-item_user-fhoto"
+                      src="images/folders-bg1_user-photo1.png"
+                      alt="user fhoto"
+                    />
+                  </div>
+                  <div
+                    class="folders-item_user-fhoto-wrapper folders-item_user-fhoto-wrapper--1"
+                  >
+                    <img
+                      class="folders-item_user-fhoto"
+                      src="images/folders-bg1_user-photo2.png"
+                      alt="user fhoto"
+                    />
+                  </div>
+                  <div
+                    class="folders-item_user-fhoto-wrapper folders-item_all-user-wrapper--all"
+                  >
+                    <span class="folder-item_all-user">+4</span>
+                  </div>
+                </div>
+                <div class="folders-item_files">
+                  <i class="far fa-folder"></i>
+                  10 Files
+                </div>
+                <div class="folders-item_date">
+                  <i class="far fa-clock"></i>
+                  Created on Dec 13, 2019
+                </div>
+              </div>
+              <!-- ========== folders item bg2 ========== -->
+              <div class="folders-item folders-item--bg-two">
+                <!-- ========== folders item  top ========== -->
+                <div class="folders-item_top">
+                  <a href="#" class="folders-item_icon folders-item_icon--bg2">
+                    <i class="folder_icon fas fa-folder"></i>
+                    <i
+                      class="folder_user folder_user--color2 fas fa-user-friends"
+                    ></i>
+                  </a>
+                  <a href="#">
+                    <i class="folder_menu fas fa-ellipsis-v"></i>
+                  </a>
+                </div>
+                <!-- ========== folders item center ========== -->
+                <h3 class="folders-item_title">Health Care App</h3>
+                <div class="folders-item_user">
+                  <div class="folders-item_user-fhoto-wrapper">
+                    <img
+                      class="folders-item_user-fhoto"
+                      src="images/folders-bg2_user-photo1.png"
+                      alt="user fhoto"
+                    />
+                  </div>
+                  <div
+                    class="folders-item_user-fhoto-wrapper folders-item_user-fhoto-wrapper--1"
+                  >
+                    <img
+                      class="folders-item_user-fhoto"
+                      src="images/folders-bg2_user-photo2.png"
+                      alt="user fhoto"
+                    />
+                  </div>
+                  <div
+                    class="folders-item_user-fhoto-wrapper folders-item2_user-fhoto-wrapper--2"
+                  >
+                    <img
+                      class="folders-item_user-fhoto"
+                      src="images/folders-bg2_user-photo3.png"
+                      alt="user fhoto"
+                    />
+                  </div>
+                  <div
+                    class="folders-item_user-fhoto-wrapper folders-item_all-user-wrapper--all folders-item_all-user-wrapper--all2"
+                  >
+                    <span class="folder-item_all-user">+2</span>
+                  </div>
+                </div>
+                <div class="folders-item_files">
+                  <i class="far fa-folder"></i>
+                  12 Files
+                </div>
+                <div class="folders-item_date">
+                  <i class="far fa-clock"></i>
+                  Created on Nov 04, 2019
+                </div>
+              </div>
+              <!-- ========== folders item bg3 ========== -->
+              <div class="folders-item folders-item--bg-three">
+                <!-- ========== folders item  top ========== -->
+                <div class="folders-item_top">
+                  <a href="#" class="folders-item_icon folders-item_icon--bg3">
+                    <i class="folder_icon fas fa-folder"></i>
+                    <i
+                      class="folder_user folder_user--color3 fas fa-user-friends"
+                    ></i>
+                  </a>
+                  <a href="#">
+                    <i class="folder_menu fas fa-ellipsis-v"></i>
+                  </a>
+                </div>
+                <!-- ========== folders item center ========== -->
+                <h3 class="folders-item_title">Food truck Website</h3>
+                <div class="folders-item_user">
+                  <div class="folders-item_user-fhoto-wrapper">
+                    <img
+                      class="folders-item_user-fhoto"
+                      src="images/folders-bg3_user-photo1.png"
+                      alt="user fhoto"
+                    />
+                  </div>
+                  <div
+                    class="folders-item_user-fhoto-wrapper folders-item_user-fhoto-wrapper--1"
+                  >
+                    <img
+                      class="folders-item_user-fhoto"
+                      src="images/folders-bg3_user-photo2.png"
+                      alt="user fhoto"
+                    />
+                  </div>
+                  <div
+                    class="folders-item_user-fhoto-wrapper folders-item_all-user-wrapper--all folders-item_all-user-wrapper--all3"
+                  >
+                    <span class="folder-item_all-user">+4</span>
+                  </div>
+                </div>
+                <div class="folders-item_files">
+                  <i class="far fa-folder"></i>
+                  16 Files
+                </div>
+                <div class="folders-item_date">
+                  <i class="far fa-clock"></i>
+                  Created on Nov 03, 2019
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ========== section recent files ========== -->
+          <section class="recent-files">
+            <!-- ======================================== -->
+            <div class="section-title_wrapper">
+              <h2 class="section-title">Recent Files</h2>
+              <a href="#" class="folders-link"
+                >View All
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <!-- ========== -->
+            <ul class="recent-files_wrapper">
+              <li class="recent-files_file">
+                <div class="file_title-wrapper">
+                  <div class="file_logo file_logo--bg1">PDF</div>
+                  <h4 class="file_title">Design Thinking Process</h4>
+                </div>
+                <div class="file_members">Only You</div>
+                <div class="file_date">Dec 13, 2019</div>
+                <div class="file_memory">2 MB</div>
+                <ul class="file_links">
+                  <li>
+                    <a class="file_link-item fas fa-plus"></a>
+                  </li>
+                  <li>
+                    <a class="file_link-item fas fa-share-square"></a>
+                  </li>
+                  <li>
+                    <a class="file_link-item fas fa-ellipsis-v"></a>
+                  </li>
+                </ul>
+              </li>
+              <!-- ========== -->
+              <li class="recent-files_file">
+                <div class="file_title-wrapper">
+                  <div class="file_logo file_logo--bg2">PNG</div>
+                  <h4 class="file_title">Design Thinking Process</h4>
+                </div>
+                <div class="file_members">10 members</div>
+                <div class="file_date">Nov 04, 2019</div>
+                <div class="file_memory">10 MB</div>
+                <ul class="file_links">
+                  <li>
+                    <a class="file_link-item fas fa-plus"></a>
+                  </li>
+                  <li>
+                    <a class="file_link-item fas fa-share-square"></a>
+                  </li>
+                  <li>
+                    <a class="file_link-item fas fa-ellipsis-v"></a>
+                  </li>
+                </ul>
+              </li>
+              <!-- ========== -->
+              <li class="recent-files_file">
+                <div class="file_title-wrapper">
+                  <div class="file_logo file_logo--bg3">PDF</div>
+                  <h4 class="file_title">Characters Animation</h4>
+                </div>
+                <div class="file_members">15 Members</div>
+                <div class="file_date">Nov 01, 2019</div>
+                <div class="file_memory">50 MB</div>
+                <ul class="file_links">
+                  <li>
+                    <a class="file_link-item fas fa-plus"></a>
+                  </li>
+                  <li>
+                    <a class="file_link-item fas fa-share-square"></a>
+                  </li>
+                  <li>
+                    <a class="file_link-item fas fa-ellipsis-v"></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- contant container end -->
+      </div>
+      <!-- ========== contant end ========== -->
+
+      <!-- ========== right sidebar ========== -->
+      <!-- ================================== -->
+      <aside class="right-sidebar">
+        <div class="right-sidebar_container">
+          <!-- ========= profile ========== -->
+          <ul class="profile-wrapper">
+            <li class="far fa-question-circle"></li>
+            <li class="fas fa-cog"></li>
+            <li class="notice far fa-bell"></li>
+            <li class="profile">
+              <img src="images/profile-photo.png" alt="profile photo" />
+              <a href="#" class="profile_link">
+                <span class="profile_title">Jannie</span>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- ========= calendar ========== -->
+          <article class="calendar">
+            <div class="section-title_wrapper">
+              <div class="section-title">Calendar</div>
+              <a href="#" class="section-more fas fa-chevron-up"></a>
+            </div>
+            <div class="calendar_time">
+              <input
+                class="time-switcher"
+                type="radio"
+                name="time"
+                id="time-week"
+              />
+              <label
+                for="time-week"
+                class="time-controls_item time-controls_item--week"
+                >Week</label
+              >
+              <input
+                class="time-switcher"
+                type="radio"
+                name="time"
+                id="time-month"
+                checked
+              />
+              <label
+                for="time-month"
+                class="time-controls_item time-controls_item--month"
+                >Month</label
+              >
+              <input
+                class="time-switcher"
+                type="radio"
+                name="time"
+                id="time-year"
+              />
+              <label
+                for="time-year"
+                class="time-controls_item time-controls_item--year"
+                >Year</label
+              >
+            </div>
+            <div class="calendar_month-title-wrapper">
+              <a href="#" class="fas fa-chevron-left"></a>
+              <div class="calendar_month-title">December 2019</div>
+              <a href="#" class="fas fa-chevron-right"></a>
+            </div>
+            <div class="calendar_month">
+              <div class="calendar_week">ПН</div>
+              <div class="calendar_week">ВТ</div>
+              <div class="calendar_week">СР</div>
+              <div class="calendar_week">ЧТ</div>
+              <div class="calendar_week">ПТ</div>
+              <div class="calendar_week">СБ</div>
+              <div class="calendar_week">ВС</div>
+              <div class="calendar_day day--last-month">27</div>
+              <div class="calendar_day day--last-month">28</div>
+              <div class="calendar_day day--last-month">29</div>
+              <div class="calendar_day day--last-month">30</div>
+              <div class="calendar_day">1</div>
+              <div class="calendar_day">2</div>
+              <div class="calendar_day">3</div>
+              <div class="calendar_day">4</div>
+              <div class="calendar_day">5</div>
+              <div class="calendar_day">6</div>
+              <div
+                class="calendar_day calendar_day--current calendar_day--event"
+              >
+                7
+              </div>
+              <div class="calendar_day">8</div>
+              <div class="calendar_day calendar_day--event">9</div>
+              <div class="calendar_day">10</div>
+              <div class="calendar_day">11</div>
+              <div class="calendar_day">12</div>
+              <div class="calendar_day">13</div>
+              <div class="calendar_day">14</div>
+              <div class="calendar_day">15</div>
+              <div class="calendar_day">16</div>
+              <div class="calendar_day">17</div>
+              <div class="calendar_day">18</div>
+              <div class="calendar_day">19</div>
+              <div class="calendar_day calendar_day--reminder">20</div>
+              <div class="calendar_day">21</div>
+              <div class="calendar_day">22</div>
+              <div class="calendar_day">23</div>
+              <div class="calendar_day calendar_day--holiday">24</div>
+              <div class="calendar_day">25</div>
+              <div class="calendar_day">26</div>
+              <div class="calendar_day">27</div>
+              <div class="calendar_day">28</div>
+              <div class="calendar_day">29</div>
+              <div class="calendar_day">30</div>
+              <div class="calendar_day">31</div>
+            </div>
+          </article>
+          <!-- ========= task ========= -->
+          <div class="task">
+            <div class="section-title_wrapper">
+              <h2 class="section-title">Your Task</h2>
+              <a href="#" class="folders-link"
+                >View All
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- ========== recommendation ========== -->
+          <article class="recommendation">
+            <div class="recommendation_title">
+              <p>Review health care app with team</p>
+              <a href="#" class="file_link-item fas fa-ellipsis-v"></a>
+            </div>
+            <div class="recommendation_data">
+              <i class="far fa-clock"></i>
+              <span>7 Dec, 2019 | 10:00 AM</span>
+            </div>
+            <div class="recommendation_user">
+              <div class="recommendation_photo-wrapper">
+                <img
+                  class="recommendation_photo"
+                  src="images/recommendation_user1.png"
+                  alt="user fhoto"
+                />
+              </div>
+              <div
+                class="recommendation_photo-wrapper recommendation_photo-wrapper1"
+              >
+                <img
+                  class="recommendation_photo"
+                  src="images/recommendation_user2.png"
+                  alt="user fhoto"
+                />
+              </div>
+              <div
+                class="recommendation_photo-wrapper recommendation_photo-wrapper2"
+              >
+                <div class="recommendation_photo-all">+</div>
+              </div>
+            </div>
+          </article>
+          <!-- ========== storage ========== -->
+          <div class="storage-description">
+            <div class="section-title_wrapper">
+              <h2 class="section-title">Storage</h2>
+              <a href="#" class="folders-link"
+                >View All
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- ========== diagram ========== -->
+          <div class="diagram">
+            <div class="diagram-top">
+              <div class="diagram_space">
+                Available Space <span>73 GB</span>
+              </div>
+              <a href="#" class="diagram_selection-month">
+                <i class="far fa-calendar-alt"></i>
+                Month
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+
+            <div class="diagram-wrapper">
+              <img src="images/diagram-img.png" alt="diagram image" />
+            </div>
+
+            <ul class="diagram-bottom">
+              <li class="diagram-sign diagram-sign--color1">
+                <span></span> Uploads
+              </li>
+              <li class="diagram-sign diagram-sign--color2">
+                <span></span>Files Received
+              </li>
+              <li class="diagram-sign diagram-sign--color3">
+                <span></span>Space Left
+              </li>
+            </ul>
+          </div>
+          <!-- diagram end -->
+        </div>
+        <!-- ========== right sidebar end ========== -->
+      </aside>
+    </div>
+  </body>
+</html>

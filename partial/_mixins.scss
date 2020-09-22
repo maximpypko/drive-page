@@ -1,0 +1,141 @@
+@mixin sectionTitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.166667px;
+  color: #333539;
+}
+
+@mixin buttonPrimary {
+  text-decoration: none;
+  border: none;
+  padding: 11px;
+  background-color: $primaryColor;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.54px;
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+@mixin sectionHeader {
+  .section-title_wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .section-title {
+      @include sectionTitle;
+    }
+    .folders-link {
+      padding: 7px 12px;
+      background: #eff3fb;
+      border-radius: 9px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.062857px;
+      color: #4d4d4d;
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+@mixin foldersItem {
+  width: 25%;
+  padding: 20px;
+  border-radius: 26px;
+  color: #fff;
+}
+
+@mixin foldersItemTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .folders-item_icon {
+    display: block;
+    font-size: 22px;
+    padding: 8px;
+    mix-blend-mode: normal;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    .folder_user {
+      position: absolute;
+      left: 14px;
+      top: 16px;
+      font-size: 8px;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  & .folder_menu {
+    color: #d8d8d8;
+    padding: 5px;
+    &:hover {
+      transform: scale(1.5) rotateZ(180deg);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+@mixin folderItemTitle {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.228571px;
+}
+
+@mixin folderItemUser {
+  position: relative;
+  height: 26px;
+  margin-top: 14px;
+  .folders-item_user-fhoto-wrapper {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    .folders-item_user-fhoto {
+      width: 100%;
+      border: 2px solid transparent;
+    }
+  }
+  .folders-item_user-fhoto-wrapper--1 {
+    left: 20px;
+  }
+  .folders-item_all-user-wrapper--all {
+    left: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #383d4a;
+    border: 2px solid $colorItemOne;
+
+    .folder-item_all-user {
+      position: absolute;
+      right: 5px;
+      top: 3px;
+    }
+  }
+}
+
+@mixin folderItemFiles {
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.171429px;
+  & i {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
